@@ -1,0 +1,370 @@
+
+fruitbox version 2.04 (Pi(0-3) 32-bit Lite (non-Desktop), Sep  2 2023, 09:56:03) by Mike Kingsley
+A customisable MP3/OGV Jukebox for the Raspberry Pi.
+Free for non-commercial use
+Detecting display...
+Creating 1920 x 1080 display...
+1920 x 1080 (59Hz)
+Loading initialisation file 'fruitbox.ini'...
+
+  [general]
+  MusicPath = ../Music
+  MaxPlayQueueLength = 20
+  LoopPlayQueue = No
+  IgnoreArtistPrefixThe = Yes
+  SongHistoryDepth = 20
+  SongHistoryIncludeUserSelection = No
+  SongVolume = 50
+  SongVolumeStep = 10
+  ReplayGain = None
+  FreePlay = Yes
+  CreditsPerCoin1 = 1
+  CreditsPerCoin2 = 2
+  CreditsPerCoin3 = 5
+  CreditsPerCoin4 = 10
+  CreditsPerCoin5 = 25
+  CreditsPerCoin6 = 100
+  CreditsPerSong = 1
+  MenuColour = 255 255 255
+  MenuBackgroundColour = 32 32 32 200
+  SkinChooserTimeout = 0.0 Seconds
+
+  [attract mode]
+  Enable = No
+  Choice = Random
+  Interval = 1.0 Minute
+  MaxVolume = 50
+  FadeIn = 5.0 Seconds
+  FadeOut = 10.0 Seconds
+  FadeInPosition = 60.0 Seconds
+  FadeOutPosition = 70.0 Seconds
+  SkipLoad = Yes
+
+  [skins]
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/fruitbox.cfg
+
+  [buttons]
+  Quit = KEY_ESC
+  Coin1 = KEY_F1
+  Coin2 = KEY_F2
+  Coin3 = KEY_F3
+  Coin4 = KEY_F4
+  Coin5 = KEY_F5
+  Coin6 = KEY_F6
+  VolUp = KEY_EQUAL
+  VolDown = KEY_MINUS
+  Random = KEY_SPACE
+  Select = KEY_ENTER
+  Skip = KEY_BACKSPACE
+  Pause = KEY_SEMICOLON
+  Up = KEY_UP
+  Down = KEY_DOWN
+  Left = KEY_LEFT
+  Right = KEY_RIGHT
+  LeftScreen = KEY_LEFTBRACE
+  RightScreen = KEY_RIGHTBRACE
+  LeftSort = KEY_COMMA
+  RightSort = KEY_DOT
+  AttractMode = KEY_APOSTROPHE
+  LoopQueue = KEY_F11
+  FreePlay = KEY_F12
+  ClearQueue = KEY_DELETE
+  Mute = KEY_LEFTCTRL
+  PowerOff = KEY_SYSRQ
+  Select0 = KEY_0
+  Select1 = KEY_1
+  Select2 = KEY_2
+  Select3 = KEY_3
+  Select4 = KEY_4
+  Select5 = KEY_5
+  Select6 = KEY_6
+  Select7 = KEY_7
+  Select8 = KEY_8
+  Select9 = KEY_9
+  SelectA = KEY_A
+  SelectB = KEY_B
+  SelectC = KEY_C
+  SelectD = KEY_D
+  SelectE = KEY_E
+  SelectF = KEY_F
+  SelectG = KEY_G
+  SelectH = KEY_H
+  SelectI = KEY_I
+  SelectJ = KEY_J
+  SelectK = KEY_K
+  SelectL = KEY_L
+  SelectM = KEY_M
+  SelectN = KEY_N
+  SelectO = KEY_O
+  SelectP = KEY_P
+  SelectQ = KEY_Q
+  SelectR = KEY_R
+  SelectS = KEY_S
+  SelectT = KEY_T
+  SelectU = KEY_U
+  SelectV = KEY_V
+  SelectW = KEY_W
+  SelectX = KEY_X
+  SelectY = KEY_Y
+  SelectZ = KEY_Z
+  Flag1 = KEY_F7
+  Flag2 = KEY_F8
+  Flag3 = KEY_F9
+  Flag4 = KEY_F10
+  Menu = KEY_TAB
+  Search = KEY_SLASH
+  Mouse = BTN_LEFT
+  Screenshot = KEY_RIGHTCTRL
+
+  [touch screen]
+  Enable = Yes
+  TopLeft = -6 30
+  BottomRight = 1930 1105
+
+  [mouse]
+  Enable = Yes
+  Size = 44 67
+  Angle = 0
+  Tint = 255 255 255 255
+  HorizontalFlip = No
+  VerticalFlip = No
+  HotSpot = 2 2
+  Sensitivity = 1.0
+  HideAfter = 5.0 Seconds
+
+  [joystick]
+  Enable = No
+  DisableTitleStripFlip = No
+  Size = 0 0
+  Angle = 0
+  Tint = 255 255 255 255
+  HorizontalFlip = No
+  VerticalFlip = No
+  Offset = 0 0
+
+
+...initialisation file closed.
+
+Detecting input devices...
+  Opened "Sleep Button" (/dev/input/event0)
+  Opened "Lid Switch" (/dev/input/event1)
+  Opened "Power Button" (/dev/input/event2)
+  Opened "Power Button" (/dev/input/event3)
+  Opened "AT Translated Set 2 keyboard" (/dev/input/event4)
+  ...keyboard detected
+  Opened "Wireless hotkeys" (/dev/input/event8)
+  Opened "Intel HID events" (/dev/input/event9)
+  Opened "HP WMI hotkeys" (/dev/input/event5)
+  Opened "HP HD Camera: HP HD Camera" (/dev/input/event6)
+  ...mouse detected
+  Opened "ELAN0733:00 04F3:316C Mouse" (/dev/input/event10)
+  ...touchscreen detected
+  Opened "ELAN0733:00 04F3:316C Touchpad" (/dev/input/event11)
+  ...touchscreen detected
+  Opened "GTCH7503:00 2A94:C04D" (/dev/input/event7)
+  Opened "Video Bus" (/dev/input/event12)
+  Opened "sof-hda-dsp Mic" (/dev/input/event13)
+  Opened "sof-hda-dsp Headphone" (/dev/input/event14)
+  Opened "sof-hda-dsp HDMI/DP,pcm=3" (/dev/input/event15)
+  Opened "sof-hda-dsp HDMI/DP,pcm=4" (/dev/input/event16)
+  Opened "sof-hda-dsp HDMI/DP,pcm=5" (/dev/input/event17)
+
+Reading skin configuration file '/home/devel/Devel/rpi-fruitbox-v2/skins/Classic/fruitbox.cfg'...
+
+  [general]
+  SkinName = Classic
+  SkinDescription = by Keefypee
+  SkinDescription = and Chundermike
+  SkinSize = 1680 1050
+  SortSongsBy = Title
+  SortSongsBy = Artist
+  NoDuplicates = Yes
+  SelectButtons = ABCDE
+  SelectButtons = 123456
+  AutoSelect = No
+  SelectTimeout = 5.0 Seconds
+  SelectHoldTimeout = 5.0 Seconds
+  TitleStripAutoTurnTime = 1.0 Minute
+  SongsPerTitleStrip = 2
+  TitleStripSize = 294 96
+  TitleStripBackground = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/strip_default.png 
+  TitleStripBackground = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/strip_pop.png Pop
+  TitleStripBackground = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/strip_rock.png Rock
+  TitleStripMoveStyle = 4 5 Yes
+  PairSongs = Dual
+  ArtistDescription = ${SONG_ARTIST} / ${PAIRED_SONG_ARTIST}
+  SongLoadTime = 0.0 Ticks
+  SongUnloadTime = 0.0 Ticks
+  ArtistText = 1 255 32 32 255 centre No -1 No 0 8 253
+  SongText = 1 0 0 0 255 centre No -1 No 0 8 200
+  PairedSongText = 1 40 20 0 255 centre No -1 No 0 6 200
+
+  [fonts]
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/selite.ttf 21
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/dotmatrx.ttf 14
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/selite.ttf 16
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/dotmatrx.ttf 24
+
+  [title strip]
+  Position = 350 210
+  MoveReverse = No
+
+  [title strip]
+  Position = 690 210
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 1030 210
+  MoveReverse = No
+
+  [title strip]
+  Position = 350 306
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 690 306
+  MoveReverse = No
+
+  [title strip]
+  Position = 1030 306
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 350 402
+  MoveReverse = No
+
+  [title strip]
+  Position = 690 402
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 1030 402
+  MoveReverse = No
+
+  [title strip]
+  Position = 350 498
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 690 498
+  MoveReverse = No
+
+  [title strip]
+  Position = 1030 498
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 350 594
+  MoveReverse = No
+
+  [title strip]
+  Position = 690 594
+  MoveReverse = Yes
+
+  [title strip]
+  Position = 1030 594
+  MoveReverse = No
+
+  [status]
+  Contents = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/now_playing.txt
+  LineSpacing = 6
+  Position = 466 850
+  Size = 344 104
+  Text = 2 32 255 32 255 centre No 1 No 0 0 430
+  TimerTickPeriod = 4.0 Ticks
+
+  [status]
+  Contents = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/coming_up.txt
+  LineSpacing = 6
+  Position = 850 850
+  Size = 354 104
+  Text = 2 32 255 32 255 centre No 1 No 0 0 430
+  TimerTickPeriod = 4.0 Ticks
+
+  [bitmap]
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/lighting.png
+  Position = 0 0
+  Size = 1680 1050
+  Tint = 100 [255 ${SPECTRUM_BAND} 0] 100 [255 ${SPECTRUM_BAND} 1] 100 [255 ${SPECTRUM_BAND} 2] 64
+
+  [status] # SELECT CODE
+  Contents = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/selection.txt
+  LineSpacing = 4
+  Position = 326 894
+  Size = 102 50
+  Text = 4 32 255 32 255 centre No 1 No 0 0 100
+
+  [status] # PAGE TURN SOUND
+  Contents = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/page_turn.txt
+  Sound = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/JBPTurn.wav 50 No
+
+  [status] # BUTTON PRESS SOUND
+  Contents = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button_press.txt
+  Sound = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/JBBPress.wav 50 No
+
+  [spectrum] # LEFT ANALYSER BARS
+  Bitmap = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/spectrum.png
+  Mode = Scaled
+  Position = 104 284
+  Size = 160 370
+  HorizontalFlip = Yes
+  Decay = 3
+  Channel = Left
+  Band = 0 1.0 0 0
+  Band = 2 1.0 0 0
+  Band = 4 1.0 0 0
+  Band = 6 1.0 0 0
+  Band = 9 1.0 0 0
+  Band = 12 1.0 0 0
+  Band = 15 1.0 0 0
+  Band = 18 1.0 0 0
+
+  [spectrum] # RIGHT ANALYSER BARS
+  Bitmap = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/spectrum.png
+  Mode = Scaled
+  Position = 1414 284
+  Size = 162 370
+  HorizontalFlip = No
+  Decay = 3
+  Channel = Right
+  Band = 1 1.0 0 0
+  Band = 3 1.0 0 0
+  Band = 5 1.0 0 0
+  Band = 7 1.0 0 0
+  Band = 10 1.0 0 0
+  Band = 13 1.0 0 0
+  Band = 16 1.0 0 0
+  Band = 19 1.0 0 0
+
+  [bitmap]
+  File = /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/foreground.png
+  Position = 0 0
+  Size = 1680 1050
+
+  [touch buttons]
+  Skip = 318 770 110 44 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-CANCEL.bmp
+  Select = 1236 764 110 50 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-SELECT.bmp
+  SelectA = 498 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-a.bmp
+  SelectB = 544 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-b.bmp
+  SelectC = 590 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-c.bmp
+  SelectD = 636 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-d.bmp
+  SelectE = 684 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-e.bmp
+  Random = 732 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-R.bmp
+  Select1 = 886 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-1.bmp
+  Select2 = 934 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-2.bmp
+  Select3 = 980 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-3.bmp
+  Select4 = 1028 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-4.bmp
+  Select5 = 1076 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-5.bmp
+  Select6 = 1124 768 38 64 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-6.bmp
+  Left = 1216 840 64 116 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-LEFT.bmp
+  Right = 1290 840 64 116 /home/devel/Devel/rpi-fruitbox-v2/skins/Classic/button-RIGHT.bmp
+Closed skin file.
+
+Initialising audio ...
+
+  0 songs found
+ERROR: No songs found.
+HINT: 
+HINT: Please check MusicPath(s) in fruitbox.ini,
+HINT: --music-path command line option
+HINT: or the skin config file
